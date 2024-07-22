@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
-import { AiOutlineShoppingCart, AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-
+import logo from "./assets/shared/logo.svg";
+import hamburger from "./assets/shared/icon-hamburger.svg";
+import close from "./assets/shared/icon-close.svg";
 
 const Nav = () => {
 
