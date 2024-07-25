@@ -30,28 +30,36 @@ const Nav = () => {
 
   return (
     <>
-      <div className='flex items-center justify-between p-5 border-b border-slate-400 max-w-4xl mx-auto'>
+      <div className='flex items-center justify-between p-5 w-357 h-88'>
       <div className='flex items-center'>
-        <img src={logo} alt="Logo" className='md:pr-6' />
+        <img src={logo} alt="Logo" className='md:pr-6' style={{ width: '40px', height: '40px' }} />
       </div>
-      <div className='flex items-center'>
+      <div className='flex items-center '>
         <div onClick={handleNav} className="z-[3000] md:hidden">
           {nav ? (
-            <img src={close} alt="Close" className="relative" style={{ width: '20px', height: '20px' }} />
+            <img src={close} alt="Close" className="relative" style={{ width: '24px', height: '21px' }} />
           ) : (
-            <img src={hamburger} alt="Hamburger" className="relative" style={{ width: '20px', height: '20px' }} />
+            <img src={hamburger} alt="Hamburger" className="relative" style={{ width: '24px', height: '21px' }} />
           )}
         </div>
       </div>
-      <nav className='z-[2050] h-full'>
+      {/* <nav className='z-[2050] h-full'>
         <ul className={`${nav ? 'block absolute right-0 top-0 w-[60%] h-full bg-white pt-24 pl-5 space-y-4' : 'hidden md:flex'} items-center gap-4`}>
           <li>00 HOME</li>
           <li>01 DESTINATION</li>
           <li>02 CREW</li>
           <li>03 TECHNOLOGY</li>
         </ul>
-      </nav>
+      </nav> */}
     </div>
+    <nav>
+        <ul className={`${nav ? 'block absolute right-0 w-[254px] h-full bg-white pl-[32px] space-y-8 top-[133px]' : 'hidden md:flex'} items-center gap-4`}>
+          <li>00 HOME</li>
+          <li>01 DESTINATION</li>
+          <li>02 CREW</li>
+          <li>03 TECHNOLOGY</li>
+        </ul>
+      </nav>
   </>
   )
 }
