@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link, Outlet } from "react-router-dom";
 
 import logo from "../assets/shared/logo.svg";
 import hamburger from "../assets/shared/icon-hamburger.svg";
@@ -28,12 +29,12 @@ const Nav = () => {
             )}
           </div>
         
-        <nav className={`${nav ? 'block' : 'hidden'} md:flex md:items-center md:space-x-8 md:relative md:top-0 md:right-[-2%] md:w-[736px] md:h-[96px] md:bg-transparent  absolute top-0 right-0 md:mr-0 w-[254px] h-full md:bg-white z-[2000] ml-[15%] bg-white/5 `}>
-          <ul className='pl-[32px] space-y-8 relative top-[133px] md:top-0 md:pl-0 md:left-[20%] md:space-y-0 md:flex md:space-x-8'>
-            <li>00 HOME</li>
-            <li>01 DESTINATION</li>
-            <li>02 CREW</li>
-            <li>03 TECHNOLOGY</li>
+        <nav className={`${nav ? 'block' : 'hidden'} md:flex md:items-center md:space-x-8 md:relative md:top-0 md:right-[-1.5%] md:w-[736px] md:h-[96px] md:bg-transparent  absolute top-0 right-0 md:mr-0 w-[254px] h-full md:bg-white z-[2000] ml-[15%] bg-white/5 `}>
+          <ul className='pl-[32px] space-y-8 relative top-[133px] md:top-0 md:pl-0 md:left-[18%] md:space-y-0 md:flex md:space-x-8'>
+            <li><Link to="/">00 HOME</Link></li>
+            <li><Link to="destination">01 DESTINATION</Link></li>
+            <li><Link to="crew">02 CREW</Link></li>
+            <li><Link to="technology">03 TECHNOLOGY</Link></li>
           </ul>
         </nav>
       </div>
