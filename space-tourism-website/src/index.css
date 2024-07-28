@@ -5,3 +5,30 @@
 /* body {
     background-color: blue;
 } */
+
+/* src/custom.css */
+
+@layer utilities {
+    .bg-sm {
+      background-image: url('./assets/home/background-home-mobile.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+  
+    @media (min-width: 768px) {
+      .bg-md {
+        background-image: url('./assets/home/background-home-tablet.jpg');
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  
+    @media (min-width: 1024px) {
+      .bg-lg {
+        background-image: url('./assets/home/background-home-desktop.jpg');
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+  

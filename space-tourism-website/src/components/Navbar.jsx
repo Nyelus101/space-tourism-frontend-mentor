@@ -38,6 +38,7 @@ const Nav = () => {
           </ul>
         </nav>
       </div>
+      <Outlet />
     </>
   );
 };
