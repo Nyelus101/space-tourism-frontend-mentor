@@ -17,7 +17,7 @@ const Nav = () => {
       <div className='flex items-center justify-between p-5 w-357 h-88'>
         <div className='flex items-center'>
           <img src={logo} alt="Logo" className='w-10 h-10 md:w-12 md:h-12' />
-          <div className="hidden lg:block absolute w-[35%] h-[2px] right-[50%] z-[10] bg-white opacity-25 mix-blend-normal"></div>
+          <div className="hidden lg:block absolute w-[35%] h-[2px] right-[50%] z-[10] bg-white opacity-50 mix-blend-normal"></div>
         </div>
         
         {/* <div className="bar grow hidden lg:block h-0.5  bg-white/70 translate-x-8 relative z-20"></div> */}

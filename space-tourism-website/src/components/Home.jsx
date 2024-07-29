@@ -4,7 +4,7 @@ import '../index.css';
 const Home = () => {
   return (
     <>
-      <div className="bg-sm md:bg-md lg:bg-lg flex flex-col items-center justify-center h-[calc(100vh-1px)] p-10">
+      <div className="bg-sm md:bg-md lg:bg-lg flex flex-col items-center justify-center h-[100vh] p-10">
         <article className="text-center md:text-left">
           <h1 className="text-gray-400 text-xl uppercase">
             So, you want to travel to{" "}
