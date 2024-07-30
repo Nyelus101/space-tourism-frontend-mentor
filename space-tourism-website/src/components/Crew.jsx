@@ -1,16 +1,15 @@
-import { useState } from "react";
-import { BsCircleFill } from "react-icons/bs";
+import React, { useState } from 'react';
 import data from "../starter-code/data.json";
+import { BsCircleFill } from "react-icons/bs";
 
 const Crew = () => {
-
   const [crew] = useState(data.crew);
   const [value, setValue] = useState(0);
 
   const { name, images, role, bio } = crew[value];
 
   return (
-    <>
+    <div className="bg-crew-sm md:bg-crew-md lg:bg-crew-lg flex flex-col items-center justify-center h-[100vh] p-10">
       <section className="home crew">
         <div className="px-5 pt-32 grid grid-cols-1 md:grid-cols-2 gap-10 xl:max-w-7xl xl:mx-auto">
           <article className="pt-10 xl:pt-32 text-center md:text-left">
@@ -43,19 +42,18 @@ const Crew = () => {
             </ul>
           </article>
 
-          <article>
+          <article className="pt-10 xl:pt-32">
             <img
               src={images.png}
               alt={name}
               title={name}
-              className="xl:absolute right-20 bottom-0 block mx-auto"
+              className="block mx-auto"
             />
           </article>
         </div>
       </section>
-    </>
-    
-  )
-}
+    </div>
+  );
+};
 
-export default Crew
+export default Crew;

@@ -2,18 +2,15 @@ import React, { useState } from 'react';
 import data from "../starter-code/data.json";
 
 const Destination = () => {
-
-  const [planets] = useState(data.destinations)
-  const [value, setValue] = useState(0)
+  const [planets] = useState(data.destinations);
+  const [value, setValue] = useState(0);
 
   const { name, images, description, distance, travel } = planets[value];
 
- 
-
   return (
-    <>
+    <div className="bg-destination-sm md:bg-destination-md lg:bg-destination-lg flex flex-col items-center justify-center h-[100vh] p-10">
       <section className="home destinations">
-        <div className="px-5 pt-32 grid grid-cols-1  md:grid-cols-2 gap-10 xl:max-w-7xl xl:mx-auto">
+        <div className="px-5 pt-32 grid grid-cols-1 md:grid-cols-2 gap-10 xl:max-w-7xl xl:mx-auto">
           <article className="text-center md:text-left">
             <h2 className=" text-3xl font-extralight text-gray-300 uppercase tracking-wider pb-10">
               01
@@ -63,8 +60,8 @@ const Destination = () => {
           </article>
         </div>
       </section>
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default Destination
+export default Destination;
