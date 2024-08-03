@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-import data from "../starter-code/data.json";
+// import data from "../starter-code/data.json";
+import data from "../data.json"
 
 const Destination = () => {
   const [planets] = useState(data.destinations);
   const [value, setValue] = useState(0);
 
   const { name, images, description, distance, travel } = planets[value];
+  console.log(images.png);
 
   return (
     <div className="bg-destination-sm md:bg-destination-md lg:bg-destination-lg flex flex-col items-center justify-center h-[100vh] p-10">
