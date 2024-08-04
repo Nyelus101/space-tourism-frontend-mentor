@@ -34,29 +34,64 @@ const technologies = [
 ];
 
 
-
-// const imageMap = {
-//   'Moon': vehicleLandscape,
-//   'Mars': marsPng,
-//   'Europa': europaPng,
-//   'Titan': titanPng,
-// };
-
 const Technology = () => {
-  const [technology] = useState(data.technology);
-  const [value, setValue] = useState(0);
-
-  const { name, images, description } = technology[value];
+  const [actual, setActual] = useState(0);
+  const technology = technologies[actual];
 
   return (
     <div className="bg-technology-sm md:bg-technology-md lg:bg-technology-lg lg:pl-44 p-0 m-0 h-full">
-      <div className="text-center md:text-left w-fit mx-auto mb-8 md:mx-2">
-        <h2 className="text-3xl font-extralight text-gray-300 uppercase tracking-wider pb-5 md:pb-10">
+      <div className="text-center md:text-left w-fit mx-auto pt-[20%] mb-8 md:mx-2">
+        <h2 className="text-sm lg:text-3xl font-extralight text-gray-300 uppercase tracking-wider pb-5 md:pb-10">
           03
           <span className="ml-5 font-bold">Space Launch 101</span>
         </h2>
       </div>
-        <div className="px-5 pt-32 grid grid-cols-1 md:grid-cols-2 gap-10 xl:max-w-7xl xl:mx-auto">
+      {/* Continue from here */}
+      <div className="flex flex-col lg:flex-row-reverse">
+          <div className="w-full lg:w-[35%] lg:min-h-[35vh]">
+            <picture className="block">
+              <source media="(min-width:1024px)" srcSet={technology.portrait.src} />
+              <img
+                src={technology.landscape}
+                className="object-cover w-full h-auto"
+                alt="Background Image"
+              />
+            </picture>
+          </div>
+          <div className="flex flex-col items-center mt-8 md:mt-14 lg:flex-row lg:grow lg:mt-0">
+            <div className="w-fit flex gap-4 mb-6 md:mb-11 lg:flex-col lg:mb-0 lg:gap-8">
+              {technologies.map(({ name }, index) => (
+                <div
+                  onClick={() => setActual(index)}
+                  key={name}
+                  className={`w-10 md:w-14 aspect-square flex items-center justify-center text-white border rounded-full border-white/20 transition cursor-pointer
+                                    ${technology.name === name ? "border-transparent bg-white text-primary" : "hover:border-white"}`}
+                >
+                  {index + 1}
+                </div>
+              ))}
+            </div>
+            <div className="text-secondary text-center px-6 md:max-w-lg md:mx-auto lg:text-left lg:max-w-xl">
+              <span className="block nav-text uppercase mb-2 text-[14px] md:text-[16px]">
+                The Terminology ...
+              </span>
+              <h3 className="uppercase mb-4 text-white text-[24px] md:text-[40px] lg:text-[56px]">
+                {technology.name}
+              </h3>
+              <p className="leading-relaxed lg:leading-loose lg:text-[18px]">
+                {technology.description}
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        {/* <div className="px-5 pt-32 grid grid-cols-1 md:grid-cols-2 gap-10 xl:max-w-7xl xl:mx-auto">
           <article>
             <img
               src={images.portrait}
@@ -103,7 +138,7 @@ const Technology = () => {
               className="block mx-auto"
             />
           </article>
-        </div>
+        </div> */}
     </div>
   );
 };
