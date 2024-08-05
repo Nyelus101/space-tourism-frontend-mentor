@@ -14,14 +14,11 @@ const Nav = () => {
   return (
     <header className='fixed top-0 left-0 w-full z-50 bg-transparent'>
       <div className='flex items-center justify-between p-5'>
-        <div className='flex items-center'>
-
+        <div className='flex items-center z-[10000]'>
           {/* CONTINUE THE BAR LINE ON THE NAV BAR */}
-
-          
           <img src={logo} alt="Logo" className='w-10 h-10 md:w-12 md:h-12' />
           {/* <div className="bar grow hidden lg:block h-0.5  bg-white/70 translate-x-8 relative z-20"></div> */}
-          <div className="grow hidden lg:block absolute w-[35%] h-[2px] right-[50%] z-[10000] bg-white opacity-50 mix-blend-normal"></div>
+          <div className="grow hidden lg:block absolute w-[35%] h-[2px] right-[50%]  bg-white opacity-50 mix-blend-normal"></div>
         </div>
         
         <div onClick={handleNav} className="z-[3000] md:hidden">

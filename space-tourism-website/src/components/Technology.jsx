@@ -64,8 +64,8 @@ const Technology = () => {
                 <div
                   onClick={() => setActual(index)}
                   key={name}
-                  className={`w-10 md:w-14 aspect-square flex items-center justify-center text-white border rounded-full border-white/20 transition cursor-pointer
-                                    ${technology.name === name ? "border-transparent bg-white text-black" : "hover:border-white"}`}
+                  className={`w-10 md:w-14 aspect-square flex items-center justify-center  border rounded-full border-white/20 transition cursor-pointer
+                                    ${technology.name === name ? "border-transparent bg-white text-black" : "text-white hover:border-white"}`}
                 >
                   {index + 1}
                 </div>
