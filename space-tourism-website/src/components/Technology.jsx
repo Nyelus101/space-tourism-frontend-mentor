@@ -40,8 +40,8 @@ const Technology = () => {
 
   return (
     <div className="bg-technology-sm md:bg-technology-md lg:bg-technology-lg lg:pl-44 p-0 m-0 h-full">
-      <div className="text-center md:text-left w-fit mx-auto pt-[20%] mb-8 md:mx-2">
-        <h2 className="text-sm lg:text-3xl font-extralight text-gray-300 uppercase tracking-wider pb-5 md:pb-10">
+      <div className="text-center md:text-left w-fit mx-auto pt-[20%] lg:pt-[15%]  mb-8 md:mx-2 md:pl-[5%] lg:pl-0">
+        <h2 className="text-sm md:text-xl lg:text-2xl font-extralight text-gray-300 uppercase tracking-wider pb-5 md:pb-10">
           03
           <span className="ml-5 font-bold">Space Launch 101</span>
         </h2>
@@ -50,7 +50,7 @@ const Technology = () => {
       <div className="flex flex-col lg:flex-row-reverse">
           <div className="w-full lg:w-[35%] lg:min-h-[35vh]">
             <picture className="block">
-              <source media="(min-width:1024px)" srcSet={technology.portrait.src} />
+              <source media="(min-width:1024px)" srcSet={technology.portrait} />
               <img
                 src={technology.landscape}
                 className="object-cover w-full h-auto"
@@ -71,14 +71,14 @@ const Technology = () => {
                 </div>
               ))}
             </div>
-            <div className="text-secondary text-center px-6 md:max-w-lg md:mx-auto lg:text-left lg:max-w-xl pb-8">
-              <span className="block text-gray-500 uppercase mb-2 text-[17px] md:text-[16px]">
+            <div className="text-center px-6 md:max-w-lg md:mx-auto lg:text-left lg:max-w-xl pb-8 lg:mt-8">
+              <span className="block text-gray-500 uppercase mb-2 lg:mb-[-5px] text-[14px] md:text-[16px]">
                 The Terminology ...
               </span>
-              <h3 className="uppercase mb-4 text-white text-[24px] md:text-[40px] lg:text-[56px]">
+              <h3 className="uppercase mb-4 text-white text-[24px] md:text-[40px] lg:text-[45px]">
                 {technology.name}
               </h3>
-              <p className="leading-relaxed lg:leading-loose text-sm lg:text-[18px] text-gray-500">
+              <p className="leading-relaxed lg:leading-normal text-sm lg:text-[18px] text-gray-500">
                 {technology.description}
               </p>
             </div>
