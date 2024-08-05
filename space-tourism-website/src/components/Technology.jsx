@@ -78,7 +78,7 @@ const Technology = () => {
               <h3 className="uppercase mb-4 text-white text-[24px] md:text-[40px] lg:text-[45px]">
                 {technology.name}
               </h3>
-              <p className="leading-relaxed lg:leading-normal text-sm lg:text-[18px] text-gray-500">
+              <p className="leading-relaxed lg:leading-normal text-sm lg:text-[18px] text-gray-400">
                 {technology.description}
               </p>
             </div>
