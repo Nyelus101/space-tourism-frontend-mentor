@@ -6,9 +6,9 @@ const Home = () => {
     <div className="bg-home-sm md:bg-home-md lg:bg-home-lg flex flex-col justify-evenly items-center lg:flex-row lg:items-end lg:justify-between lg:p-32 h-full p-10">
       <div className='lg:w-[1110px] lg:h-[343px] flex flex-col justify-evenly items-center lg:flex-row lg:items-end lg:justify-between md:pt-[128px] md:px-[3%] '>
       <article className="text-center lg:text-left ">
-        <h1 className="text-gray-400 text-xl uppercase ">
+        <h1 className="text-gray-400 text-sm md:text-xl uppercase ">
           So, you want to travel to{" "}
-          <span className="block font-semibold tracking-widest text-4xl text-white md:text-5xl lg:text-9xl 2xl:text-7xl mb-10 mt-3 ">
+          <span className="block font-semibold tracking-widest text-7xl text-white md:text-8xl lg:text-9xl 2xl:text-7xl mb-10 mt-3 ">
             SPACE
           </span>
         </h1>

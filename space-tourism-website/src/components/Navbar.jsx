@@ -119,12 +119,12 @@ const Nav = () => {
           )}
         </div>
         
-        <nav className={`fixed top-0 left-0 w-full h-full bg-white bg-opacity-80 transform ${nav ? 'translate-x-0 w-[70%] ' : 'translate-x-full'} transition-transform duration-300 ease-in-out md:relative bg-opacity-0 backdrop-blur-lg md:right-0 md:w-auto md:h-auto md:transform-none md:transition-none`}>
-          <ul className='flex flex-col items-center justify-center h-full space-y-8 md:space-y-0 md:space-x-10 md:flex-row md:ml-auto'>
-            <li><Link to="/" className="text-white text-lg md:text-base" onClick={handleNav}>00 HOME</Link></li>
-            <li><Link to="destination" className="text-white text-lg md:text-base" onClick={handleNav}>01 DESTINATION</Link></li>
-            <li><Link to="crew" className="text-white text-lg md:text-base" onClick={handleNav}>02 CREW</Link></li>
-            <li><Link to="technology" className="text-white text-lg md:text-base" onClick={handleNav}>03 TECHNOLOGY</Link></li>
+        <nav className={`fixed top-0 right-0 w-[60%] h-full bg-black bg-opacity-0 transform ${nav ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out md:relative bg-opacity-0 backdrop-blur-lg md:right-0 md:w-auto md:h-auto md:transform-none md:transition-none md:pl-40 md:pr-12 md:mr-[-4%] md:pt-6 md:pb-6`}>
+          <ul className='flex flex-col items-left pl-8 mt-[-30%] md:pl-0 md:mt-0 justify-center h-full space-y-5 md:space-y-0 md:space-x-10 md:flex-row md:ml-auto'>
+            <li><Link to="/" className="text-white text-base md:text-base" onClick={handleNav}>00 HOME</Link></li>
+            <li><Link to="destination" className="text-white text-base md:text-base" onClick={handleNav}>01 DESTINATION</Link></li>
+            <li><Link to="crew" className="text-white text-base md:text-base" onClick={handleNav}>02 CREW</Link></li>
+            <li><Link to="technology" className="text-white text-base md:text-base" onClick={handleNav}>03 TECHNOLOGY</Link></li>
           </ul>
         </nav>
       </div>
@@ -138,6 +138,9 @@ export default Nav;
 
 
 
+
+
+// md:w-auto md:h-auto
 
 
 
