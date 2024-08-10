@@ -38,7 +38,7 @@ const Destination = () => {
               src={image}
               alt={name}
               title={name}
-              className="block mx-auto h-[150px] w-[150px] md:h-[300px] md:w-[300px] lg:h-[480px] lg:w-[480px]"
+              className="block mx-auto h-[150px] w-[150px] md:h-[300px] md:w-[300px] lg:h-[480px] lg:w-[480px] rotate"
             />
           </article>
 

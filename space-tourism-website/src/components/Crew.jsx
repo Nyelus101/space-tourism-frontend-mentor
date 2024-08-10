@@ -28,7 +28,6 @@ const Crew = () => {
   const image = imageMap[name];
 
   return (
-    // <div className="bg-crew-sm md:bg-crew-md lg:bg-crew-lg flex flex-col items-center justify-center h-[100vh] p-10">
     <div className="bg-crew-sm md:bg-crew-md lg:bg-crew-lg p-0 m-0 h-full">
       <div className='lg:p-32 p-10'>
         <div className='pt-[20%] md:pt-[15%] lg:pt-[5%]'>
@@ -63,15 +62,7 @@ const Crew = () => {
               ))}
             </ul>
           </article>
-          {/* <article className="xl:pt-32 relative">
-            <img
-              src={image}
-              alt={name}
-              title={name}
-              className="block mx-auto"
-            />
-            <div className="absolute inset-[-10] bottom-0 h-1/4 bg-white opacity-50 filter blur-md"></div>
-          </article> */}
+          
           <article className="lg:mt-[-50%] xl:pt-32">
             <img
               src={image}
