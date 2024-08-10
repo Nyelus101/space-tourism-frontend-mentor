@@ -107,7 +107,7 @@ const Nav = () => {
     <header className='fixed top-0 left-0 w-full z-50 bg-transparent'>
       <div className='flex items-center justify-between p-5 lg:p-8'>
         <div className='flex items-center z-[10000]'>
-          <img src={logo} alt="Logo" className='w-10 h-10 md:w-12 md:h-12' />
+          <img src={logo} alt="Logo" className='w-8 h-8 md:w-10 md:h-10' />
           <div className="grow hidden lg:block absolute w-[35%] h-[2px] right-[50%] bg-white opacity-50 mix-blend-normal"></div>
         </div>
         
