@@ -19,14 +19,24 @@ const Home = () => {
           of this world experience!
         </p>
       </article>
-      <article className="flex items-center justify-center pt-[5%] lg:pt-0">
+      {/* <article className="flex items-center justify-center pt-[5%] lg:pt-0">
         <div className="relative group">
           <div className="absolute top-0 left-0 w-full h-full bg-white/10 rounded-full scale-50 transition-transform duration-700 ease-in-out group-hover:scale-100"></div>
           <button className="relative z-10 w-40 h-40 md:w-52 md:h-52 lg:w-[272px] lg:h-[272px] bg-white text-gray-900 font-bold uppercase text-xl md:text-2xl lg:text-3xl rounded-full shadow-lg flex items-center justify-center">
             Explore
           </button>
         </div>
+      </article> */}
+      
+      <article className="flex items-center justify-center pt-[5%] lg:pt-0">
+        <div className="relative group">
+          <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[150%] h-[150%] bg-white/10 rounded-full scale-50 transition-transform duration-[700ms!important] ease-in-out group-hover:scale-100"></div>
+          <button className="relative z-10 w-40 h-40 md:w-52 md:h-52 lg:w-72 lg:h-72 bg-white text-gray-900 font-bold uppercase text-lg md:text-2xl lg:text-3xl rounded-full shadow-lg flex items-center justify-center cursor-pointer">
+            Explore
+          </button>
+        </div>
       </article>
+
       </div>
       
     </div>
