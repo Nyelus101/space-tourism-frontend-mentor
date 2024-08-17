@@ -28,7 +28,7 @@ const Nav = () => {
           )}
         </div>
         
-        <nav className={`fixed top-0 right-0 w-[60%] h-full bg-black bg-opacity-0 transform ${nav ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out md:relative bg-opacity-0 backdrop-blur-lg md:right-0 md:w-auto md:h-auto md:transform-none md:transition-none md:pl-40 md:pr-24 md:mr-[-4%] md:pt-8 md:pb-8`}>
+        <nav className={`fixed top-0 right-0 w-[60%] h-full bg-black bg-opacity-0 transform ${nav ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-700 ease-in-out md:relative bg-opacity-0 backdrop-blur-lg md:right-0 md:w-auto md:h-auto md:transform-none md:transition-none md:pl-40 md:pr-24 md:mr-[-4%] md:pt-8 md:pb-8`}>
           <ul className='flex flex-col items-left pl-8 mt-[-30%] md:pl-0 md:mt-0 justify-center h-full space-y-5 md:space-y-0 md:space-x-10 md:flex-row md:ml-auto'>
             <li><Link to="/" className="text-white text-base md:text-base" onClick={handleNav}>00 HOME</Link></li>
             <li><Link to="destination" className="text-white text-base md:text-base" onClick={handleNav}>01 DESTINATION</Link></li>
